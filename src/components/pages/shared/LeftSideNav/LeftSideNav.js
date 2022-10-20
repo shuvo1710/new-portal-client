@@ -10,7 +10,7 @@ const LeftSideNav = () => {
         .then(data =>setCategories(data))
     },[])
     return (
-        <div className='d-lg-block d-sm-none '>
+        <div>
             <h5>All category {categories.length}</h5>
             {categories.map(caterory=> <p key={caterory.id}>
                 <Link to={`category/${caterory.id}`}>{caterory.name}</Link>
