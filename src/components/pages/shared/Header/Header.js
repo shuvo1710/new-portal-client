@@ -55,14 +55,14 @@ const Header = () => {
                 <Link to='register'>Register</Link>
                 </>
               }
-              <Nav.Link eventKey={2}>
+              <Link to="/profile" >
                 
                 {
                   user?.uid ?
                    <Image roundedCircle style={{height:'40px'}} src={user.photoURL} ></Image>:
                   <FaUser></FaUser>
                 }
-              </Nav.Link>
+              </Link>
             </Nav>
             <div className='d-lg-none'>
             <LeftSideNav></LeftSideNav>
